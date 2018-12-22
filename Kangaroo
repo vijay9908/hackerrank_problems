@@ -1,0 +1,7 @@
+a = list(map(int,input().split()))
+d1 = a[0] - a[2]
+d2 = a[1] - a[3]
+if(d1*d2 >= 0 or d1%d2!=0):
+    print("NO")
+else:
+    print("YES")
