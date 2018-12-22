@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <math.h>
+#include <string.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a[100],i ,n ;
+    int pst=0 ,ngt=0 ,zr=0 ;
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+     if(a[i]>0)
+            pst++;
+     else if(a[i]<0)
+            ngt++;
+     else if(a[i]==0)
+            zr++;
+        
+    }
+    printf("%f\n",(float)pst/n);
+    printf("%f\n",(float)ngt/n);
+    printf("%f\n",(float)zr/n);
+    
+    return 0;
+}    
+            
+       
+    
