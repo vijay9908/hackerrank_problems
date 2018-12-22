@@ -1,0 +1,8 @@
+a = list(map(int,input().split()))
+ans=sum(a)
+a.sort()
+print(ans-a[len(a)-1],ans-a[0])
+
+
+
+
