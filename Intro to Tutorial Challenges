@@ -1,0 +1,12 @@
+import math
+import os
+import random
+import re
+k = int(input())
+n = int(input())
+index = 0
+a = list(map(int,input().split()))
+for i in range(0 , n):
+    if(k == a[i]):
+        print(i)
+    
