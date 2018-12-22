@@ -1,0 +1,25 @@
+s , t = input().split()
+a , b = input().split()
+m , n = input().split()
+sam_apple = list(map(int,input().split()))[:int(m)]
+sam_orange = list(map(int,input().split()))[:int(n)]
+apple_set = []
+orange_set = []
+i = 0
+j = 0
+for i in range (0,int(m)):
+    if((int(a)+sam_apple[i]) >= int(s) and (int(a)+sam_apple[i]) <= int(t) ):
+        apple = int(a)+sam_apple[i]
+        apple_set.append(apple)
+
+for j in range (0,int(n)):
+    if((int(b)+sam_orange[j]) >= int(s) and (int(b)+sam_orange[j]) <= int(t) ):
+        orange = int(b)+sam_orange[j]
+        orange_set.append(orange)
+
+print(len(apple_set))
+print(len(orange_set))
+
+
+
+
